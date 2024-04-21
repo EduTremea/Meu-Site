@@ -1,1 +1,1 @@
-Esse foi meu primeiro projeto utilizando HTML + CSS e JavaScript, irei atualizar ele conforme ir evoluindo. Obrigado!
+Este foi meu primeiro projeto utilizando HTML + CSS e JavaScript. Vou atualizá-lo conforme eu for evoluindo. Obrigado!
