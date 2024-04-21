@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aqui você descobre quem é o Dev Treméa">
+    <title>Meu Site S2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+
+
+</head>
+<body>
+    <header class="texto" id="home">
+        <h1>Olá, Sou Luiz Eduardo Treméa </h1>
+        <small>Prazer!
+            <p>De uma olhada no conteúdo abaixo!</p>
+        </small>
+    </header>
+    <nav>
+        <a href="#home" class="menuItem slide_diagonal" onclick="mostrarConteudo('home')">Home</a>
+        <a href="#sobre" class="menuItem slide_diagonal" onclick="mostrarConteudo('sobre')">Sobre</a>
+        <a href="#form" class="menuItem slide_diagonal" onclick="mostrarConteudo('form')">Formação</a>
+        <a href="#exp" class="menuItem slide_diagonal" onclick="mostrarConteudo('exp')">Experiência</a>
+        <a href="#proj" class="menuItem slide_diagonal" onclick="mostrarConteudo('proj')">Projetos</a>
+        <a href="#hab" class="menuItem slide_diagonal" onclick="mostrarConteudo('hab')">Habilidades</a>
+        <a href="#cont" class="menuItem slide_diagonal" onclick="mostrarConteudo('cont')">Contato</a>
+    </nav>
+    <div id="conteudo">
+        Selecione um item do menu para ver o conteúdo.
+    </div>
+    <script>
+        function mostrarConteudo(secao) {
+            var conteudo = document.getElementById('conteudo');
+            conteudo.innerHTML = '';
+            switch (secao) {
+                case 'home':
+                    conteudo.innerHTML = '<h2>Dev iniciante, atualmente Analista de Suporte e amante de SQL.</h2><p></p>';
+                    break;
+                case 'sobre':
+                    conteudo.innerHTML = '<h2>Um pouco sobre mim...</h2>' +
+                    '<p> Sou estudante de Ciência da Computação na Atitus, uma faculdade em Passo Fundo, atualmente no quinto semestre.</p>'+
+                    '<p>Minha jornada profissional começou na Be8, antes conhecida como BSBIOS, onde fui estagiário de Infraestrutura. Lá, meu trabalho envolvia dar suporte técnico aos usuários, resolver problemas relatados e gerenciar tickets de suporte.</p>'+
+                    '<p>Atualmente, na Comercial Zaffari, uma das maiores empresas de varejo da região Sul, atuo como Analista de Suporte. Minhas responsabilidades incluem configurar sistemas, gerenciar permissões de acesso e realizar análises detalhadas de erros utilizando o banco de dados ORACLE.</p>'+
+                    '<p>Na faculdade, tenho me dedicado ao estudo de algoritmos, estruturas de dados, programação orientada a objetos, redes de computadores e sistemas operacionais. Tenho interesse especial em aprender mais sobre Business Intelligence (BI), Banco de Dados, Front-end em HTML, CSS e JavaScript, além de Machine Learning, áreas que vejo como fundamentais para o futuro da tecnologia.</p>'+
+                    '<p>No meu tempo livre, gosto de assistir vídeos sobre tecnologias e testá-las, além de me interessar muito por jogos, onde vejo a possibilidade de uma carreira futura no desenvolvimento de games.</p>'
+                    break;
+                case 'form':
+                    conteudo.innerHTML = '<h2>Formação Acadêmica</h2>' +
+                    '<p>Atitus Educação</p>'+
+                    '<p>Bacharelado, Ciência da Compoutação</p>'+
+                    '<p>2022 - 2026</p>'+
+                    '<hr>'+
+                    '<p>Faculdade Microlins</p>'+
+                    '<p>Curso técnico, Web Designer</p>'+
+                    '<p>2015 - 2016</p>'
+                    break;
+                case 'exp':
+                    conteudo.innerHTML = '<h2>Experiência Profissional</h2>' +
+                    '<p>Comercial Zaffari Ltda · Tempo integral</p>'+
+                    '<p>Analista de Suporte</p>'+
+                    '<p>Abr de 2023 - o momento</p>'+
+                    '<hr>' +
+                    '<p>Be8 · Estágio</p>'+
+                    '<p>Estagiário de TI</p>'+
+                    '<p>Jul de 2022 - Mar de 2023 · 9 meses</p>'+
+                    '<hr>'+
+                    '<p>Agral Tecnologia · Tempo integral</p>'+
+                    '<p>Montador de produtos eletrônicos</p>'+
+                    '<p>Mar de 2021 - Abr de 2022 · 1 ano 2 meses</p>'+
+                    '<hr>'
+                    break;
+                case 'proj':
+                    conteudo.innerHTML = '<h2>Projetos</h2><p>Até o momento esse é meu primeiro projeto ^^</p>';
+                    break;
+                case 'hab':
+                case 'hab':
+                    var lista = document.createElement('lista');
+                    conteudo.innerHTML = '<h2>Habilidades</h2>'+
+                    '<p>Hard Skills</p>'+
+                    '<ul>'+
+                    '<li>Python</li>'+
+                    '<li>SQL</li>'+
+                    '<li>HTML </li>'+
+                    '<li>CSS </li>'+
+                    '<li>JavaScript</li>'+
+                    '</ul>'+
+                    '<hr>' +
+                    '<p>Soft Skills</p>'+
+                    '<ul>'+
+                    '<li>Comunicação eficaz</li>'+
+                    '<li>Trabalho em equipe</li>'+
+                    '<li>Resolução de problemas</li>'+
+                    '<li>Liderança</li>'+
+                    '<li>Ética profissional</li>'+
+                    '<li>Empatia</li>'+
+                    '</ul>'
+                    break;
+                case 'cont':
+                    conteudo.innerHTML = '<h2>Contatos</h2>'+
+                    '<ul>'+
+                    '<li><a href="https://www.instagram.com/edu.tremea/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></li>'+
+                    '<li><a href="https://www.linkedin.com/in/luiz-eduardo-trem%C3%A9a-889587234/" target="_blank"><i class="fab fa-linkedin"></i></a></li>'+
+                    '<li><a href="https://github.com/EduTremea" target="_blank"><i class="fab fa-github"></i></a></li>'+
+                    '</ul>'
+                    break;
+                default:
+                    conteudo.innerHTML = 'Selecione um item do menu para ver o conteúdo correspondente.';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
